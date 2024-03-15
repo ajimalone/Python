@@ -1,0 +1,33 @@
+mtype = int(input("Enter meal type: "))
+quant= int(input("Enter quantity: "))
+disc = int(input("Enter discount: "))
+
+if mtype ==1:
+          print("You ordered Value meal 1")
+          print("Quantity: ",quant)
+          ttl = quant * 50
+          print("Total amount: {:.2f}".format(ttl))
+          count = ttl * disc / 100
+          print("Less", disc,"%","discount: {:.2f}".format(count))
+          ttld = ttl-count
+          print("Total amount due: {:.2f}".format(ttld))
+elif mtype ==2:
+          print("You ordered Value meal 2")
+          print("Quantity: ",quant)
+          ttl = quant * 70
+          print("Total amount: {:.2f}".format(ttl))
+          count = ttl * disc / 100
+          print("Less", disc,"%","discount: {:.2f}".format(count))
+          ttld = ttl-count
+          print("Total amount due: {:.2f}".format(ttld))
+elif mtype ==3:
+          print("You ordered Value meal 3")
+          print("Quantity: ",quant)
+          ttl = quant * 90
+          print("Total amount: {:.2f}".format(ttl))
+          count = ttl * disc / 100
+          print("Less",disc,"%","discount: {:.2f}".format(count))
+          ttld = ttl-count
+          print("Total amount due: {:.2f}".format(ttld))
+else:
+          print("Meal is not available")
