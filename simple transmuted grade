@@ -1,0 +1,3 @@
+score=int(input("Enter score: "))
+num=int(input("Enter number of items: "))
+print("Transmuted grade is: ",score * 50/num + 50)
